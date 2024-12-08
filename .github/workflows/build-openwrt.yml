@@ -295,7 +295,7 @@ jobs:
           elif [[ "${{ inputs.source_branch }}" == *"x-wrt"* ]]; then
               REPO_URL="https://github.com/x-wrt/x-wrt"
               REPO_BRANCH="master"
-              TAGS_NAME="x-wrt"
+              TAGS_NAME="lede"
           elif [[ "${{ inputs.source_branch }}" == *"immortalwrt"* ]]; then
               REPO_URL="https://github.com/immortalwrt/immortalwrt"
               REPO_BRANCH="master"
