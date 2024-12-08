@@ -16,7 +16,7 @@ on:
         type: choice
         options:
           - openwrt-main
-          - lede-master
+          - x-wrt-master
           - immortalwrt-master
       openwrt_board:
         description: "Select device board"
@@ -292,10 +292,10 @@ jobs:
               REPO_URL="https://github.com/openwrt/openwrt"
               REPO_BRANCH="main"
               TAGS_NAME="official"
-          elif [[ "${{ inputs.source_branch }}" == *"lede"* ]]; then
-              REPO_URL="https://github.com/coolsnowwolf/lede"
+          elif [[ "${{ inputs.source_branch }}" == *"x-wrt"* ]]; then
+              REPO_URL="https://github.com/x-wrt/x-wrt"
               REPO_BRANCH="master"
-              TAGS_NAME="lede"
+              TAGS_NAME="x-wrt"
           elif [[ "${{ inputs.source_branch }}" == *"immortalwrt"* ]]; then
               REPO_URL="https://github.com/immortalwrt/immortalwrt"
               REPO_BRANCH="master"
