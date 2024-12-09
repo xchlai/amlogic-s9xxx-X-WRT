@@ -8805,3 +8805,8 @@ CONFIG_PACKAGE_urllogger=y
 # CONFIG_PACKAGE_fontconfig is not set
 # end of Font-Utils
 # end of Xorg
+
+CONFIG_PACKAGE_luci-app-adguardhome=y
+CONFIG_PACKAGE_luci-app-amlogic=y
+
+
