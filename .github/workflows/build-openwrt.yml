@@ -17,7 +17,7 @@ on:
         options:
           - openwrt-main
           - lede-master
-          - immortalwrt-master
+          - X-WRT-master
       openwrt_board:
         description: "Select device board"
         required: false
@@ -296,10 +296,10 @@ jobs:
               REPO_URL="https://github.com/xchlai/x-wrt"
               REPO_BRANCH="master"
               TAGS_NAME="lede"
-          elif [[ "${{ inputs.source_branch }}" == *"immortalwrt"* ]]; then
+          elif [[ "${{ inputs.source_branch }}" == *"X-WRT"* ]]; then
               REPO_URL="https://github.com/x-wrt/x-wrt"
               REPO_BRANCH="master"
-              TAGS_NAME="immortalwrt"
+              TAGS_NAME="X-WRT"
           else
               echo "Unknown source code repository."
               exit 1
